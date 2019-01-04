@@ -27,6 +27,10 @@ $numbers = [7, 9, 8, 9, 8, 8, 6];
     <?php echo printArray($numbers); ?> <br>
     <?php echo "Largest number: " . largest($numbers); ?> <br>
     <?php echo "Average: " . average($numbers); ?> <br>
+    <?php echo "No duplicates: "; ?>
+    <?php echo printArray(removeDups($numbers)); ?> <br>
+    <?php echo "Occurences: " ?>
+    <?php print_r(distribution($numbers)); ?>
 
 </body>
 </html>
