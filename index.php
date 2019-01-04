@@ -5,11 +5,10 @@
  * Date: 1/4/2019
  * Time: 10:18 AM
  */
-
+include 'functions.php';
 $numbers = [7, 9, 8, 9, 8, 8, 6];
-function printArray($numbers) {
-    echo implode($numbers, ", ");
-}
+$largest = largest($numbers);
+
 ?>
 
 
@@ -25,6 +24,8 @@ function printArray($numbers) {
 <body>
     <h1>Pair Program 1</h1>
 
-    <?php printArray($numbers); ?>
+    <?php echo "Array: "; ?>
+    <?php echo printArray($numbers); ?> <br>
+    <?php echo "Largest number: $largest"; ?> <br>
 </body>
 </html>
