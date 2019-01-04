@@ -5,6 +5,11 @@
  * Date: 1/4/2019
  * Time: 10:18 AM
  */
+
+$numbers = [7, 9, 8, 9, 8, 8, 6];
+function printArray($numbers) {
+    echo implode($numbers, ", ");
+}
 ?>
 
 
@@ -19,5 +24,7 @@
 </head>
 <body>
     <h1>Pair Program 1</h1>
+
+    <?php printArray($numbers); ?>
 </body>
 </html>
