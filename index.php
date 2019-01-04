@@ -7,7 +7,6 @@
  */
 include 'functions.php';
 $numbers = [7, 9, 8, 9, 8, 8, 6];
-$largest = largest($numbers);
 
 ?>
 
@@ -26,6 +25,8 @@ $largest = largest($numbers);
 
     <?php echo "Array: "; ?>
     <?php echo printArray($numbers); ?> <br>
-    <?php echo "Largest number: $largest"; ?> <br>
+    <?php echo "Largest number: " . largest($numbers); ?> <br>
+    <?php echo "Average: " . average($numbers); ?> <br>
+
 </body>
 </html>
